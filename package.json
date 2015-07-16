@@ -1,0 +1,25 @@
+{
+  "name": "mobile-portfolio",
+  "version": "1.0.0",
+  "description": "Website optimization project for Udacity front end developer course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetangle/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "author": "Trevor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codetangle/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/codetangle/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-uglify": "^0.9.1"
+  }
+}
