@@ -3,7 +3,8 @@ module.exports = function(grunt) {
         uglify: {
             jscript: {
                 files: {
-                    'js/js.min.js': ['js/perfmatters.js']
+                    'js/js.min.js': ['js/perfmatters.js'],
+                    'views/js/main.min.js': ['views/js/main.js']
                 }
             },
             mainHtml: {
