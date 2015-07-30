@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
 </head>
 
 <body>
@@ -138,6 +139,28 @@
     <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2014 Udacity</div>
   </div>
   <script type="text/javascript" src="js/main.min.js"></script>
+  <script>
+      var cb1 = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var cb2 = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/bootstrap-grid.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) {
+        raf(cb1);
+        raf(cb2);
+      }
+      else {
+        window.addEventListener('load', cb1);
+        window.addEventListener('load', cb2);
+      }
+    </script>
 </body>
 
 </html>
